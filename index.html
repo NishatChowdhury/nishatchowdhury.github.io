@@ -780,7 +780,7 @@ const arr = [
 
         <div class="row contact__main">
             <div class="col-eight tab-full contact__form">
-                <form name="contactForm" id="contactForm" method="post" action="">
+                <form name="contactForm" id="contactForm" method="POST" action="mailto:nishatchowdhury73@gmail.com" enctype="multipart/form-data">
                     <fieldset>
     
                     <div class="form-field">
@@ -796,7 +796,7 @@ const arr = [
                         <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
+                        <button type="submit" value="Submit" class="full-width btn--primary">Submit</button>
                         <div class="submit-loader">
                             <div class="text-loader">Sending...</div>
                             <div class="s-loader">
@@ -843,16 +843,23 @@ const arr = [
 
     </section> <!-- end s-contact -->
 
-
     <!-- footer
     ================================================== -->
     <footer>
         <div class="row">
             <div class="col-full">
 
-                <div class="footer-logo">
-                    <a class="footer-site-logo" href="#0"><img src="nishLogo.ico" alt="Homepage"></a>
+<!--                <div class="footer-logo">-->
+<!--                    <a class="footer-site-logo" href="#0"><img src="nishLogo.ico" alt="Homepage"></a>-->
+<!--                </div>-->
+                <div style="margin-left: 420px" class="badge-base LI-profile-badge" data-locale="en_US"
+                     data-size="large" data-theme="light" data-type="VERTICAL"
+                     data-vanity="nishat-chowdhury-974561162" data-version="v1">
                 </div>
+<!--                <div class="badge-base text-center LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="nishat-chowdhury-974561162" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/nishat-chowdhury-974561162?trk=profile-badge">Nishat Chowdhury</a></div>-->
+
+
+
 
                 <ul class="footer-social">
                     <li><a href="https://github.com/NishatChowdhury">
@@ -946,6 +953,7 @@ const arr = [
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 </body>
 
